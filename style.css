@@ -1,0 +1,168 @@
+@import url("https://fonts.google.com/specimen/Young+Serif");
+@import url("https://fonts.google.com/specimen/Outfit");
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Overall body styling */
+  body {
+    font-family: 'Outfit', young-serif;
+    font-size: 1.6rem;
+    background-color: hsl(30, 54%, 90%); /* Soft beige background */
+    color: hsl(30, 10%, 34%);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 5rem;
+
+    margin: 8rem;;
+  }
+
+  h1 {
+    font-family: 'Young Serif', serif;
+    color: hsl(24, 5%, 18%);
+  }
+
+  hr {
+    margin-top: 2rem;
+  }
+
+
+  /* Centering the container and adding a card-like appearance */
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background-color: #fff; /* White background for content */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  /* Styling for the main image */
+  .container img {
+    width: 90%;
+    height: auto;
+    margin: 20px;
+    border-radius: 20px;
+  }
+
+  /* Recipe title */
+  .container h1 {
+    font-size: 2.5rem;
+    color: hsl(24, 5%, 18%);
+    margin-bottom: 10px;
+    gap: 2rem;
+  }
+
+  /* Description */
+  .container p {
+    font-size: 1rem;
+    gap: 10rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Section styling */
+  h2, h3 {
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 10px;
+    gap: 20rem;
+  }
+
+  .prep, .Ingredients, .Instructions, .table {
+    margin-bottom: 30px;
+    padding: 30px;
+    margin: 20px;
+  }
+
+  /* Styling for lists */
+  ul, ol {
+    margin-left: 20px;
+    font-size: 1rem;
+  }
+
+  ul li, ol li {
+    margin-bottom: 10px;
+  }
+
+
+  /* Nutrition table */
+  .table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+
+  .table table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .table table td:last-child {
+    font-weight: bolder;
+    text-align: left;
+    color: hsl(14, 45%, 36%);
+  }
+
+  /* Attribution */
+  .attribution {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 20px;
+  }
+
+  .attribution a {
+    color: #d67b5b;
+    text-decoration: none;
+  }
+
+  .attribution a:hover {
+    text-decoration: underline;
+  }
+
+  /* Box styling for "Preparation Time" */
+  .prep {
+    background-color: hsl(330, 100%, 98%);/* Light peach */
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .prep h3 {
+    color: hsl(332, 51%, 32%);
+  }
+
+  /* Instructions with numbered style */
+  .Instructions ol {
+    padding-left: 1.5em;
+  }
+
+  .Instructions ol li {
+    margin-bottom: 1rem;
+  }
+
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .container {
+      padding: 15px;
+    }
+  }
